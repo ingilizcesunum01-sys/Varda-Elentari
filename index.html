@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Varda Elentari'm</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <svg xmlns="http://www.w3.org/2000/svg" style="display:none" aria-hidden="true">
+    <symbol id="kitty" viewBox="0 0 64 64">
+      <ellipse cx="16" cy="20" rx="8" ry="6.2" fill="#e11d48"/>
+      <ellipse cx="26" cy="17.5" rx="6.2" ry="5" fill="#fb7185"/>
+      <circle cx="20.5" cy="19.2" r="2.6" fill="#ffe4e6"/>
+      <circle cx="34" cy="36" r="20" fill="#fff7fb" stroke="#f9a8d4" stroke-width="1.4"/>
+      <path d="M18 24 L22 10 L29 22 Z" fill="#fff7fb" stroke="#f9a8d4" stroke-width="1.2" stroke-linejoin="round"/>
+      <path d="M40 22 L48 9 L51 24 Z" fill="#fff7fb" stroke="#f9a8d4" stroke-width="1.2" stroke-linejoin="round"/>
+      <ellipse cx="27" cy="34" rx="2.1" ry="3.1" fill="#3f2d2d"/>
+      <ellipse cx="41" cy="34" rx="2.1" ry="3.1" fill="#3f2d2d"/>
+      <ellipse cx="34" cy="40" rx="2.5" ry="1.8" fill="#f5b942"/>
+      <path d="M8 34 H22 M8 39 H22 M46 34 H58 M46 39 H58" stroke="#e7b089" stroke-width="1.15" stroke-linecap="round"/>
+    </symbol>
+  </svg>
+
+  <div class="sky" id="sky" aria-hidden="true"></div>
+  <canvas id="confetti" aria-hidden="true"></canvas>
+
+  <main>
+    <section class="page active" id="page-1">
+      <article class="card">
+        <div class="frame">
+          <img src="photo.jpg" alt="Öpücüklerle Varda">
+        </div>
+        <p class="lead">
+          Birşey söylemem lazım
+          <span class="emoji" aria-hidden="true">⭐</span>
+          <svg class="kitty kitty-inline" aria-hidden="true"><use href="#kitty"></use></svg>
+        </p>
+        <button class="btn" type="button" data-next="2">Devam et</button>
+      </article>
+    </section>
+
+    <section class="page" id="page-2">
+      <article class="card">
+        <p class="line">Biliyorum hatalar yaptım...</p>
+        <p class="line love">Ama seni çok seviyorum ve hatalarımı telafi edeceğim<span class="emoji">❤️‍🔥</span></p>
+        <div class="inner">
+          <p>seni tanıştığımız günden beri çok seviyorum tam tamına 67 gün oldu 2 Eylül 2026'dan beri</p>
+        </div>
+        <button class="btn" type="button" data-next="3">Devam et</button>
+      </article>
+    </section>
+
+    <section class="page" id="page-3">
+      <article class="card">
+        <p class="ask">Beni affeder misin?</p>
+        <p class="shy" aria-hidden="true">👉👈</p>
+        <div class="choices">
+          <button class="btn yes" id="yes" type="button">Evet</button>
+          <button class="btn no" id="no" type="button">Hayır</button>
+        </div>
+      </article>
+    </section>
+
+    <section class="page" id="page-4">
+      <article class="card finale">
+        <p class="float-row" aria-hidden="true">🎀 💖 🐱 ✨ 🌸 🥰 🌷 💕</p>
+        <h1>Teşekkür ederim birrrtanem</h1>
+        <p class="forever">seni çooook seviyorum Varda Elentari'm</p>
+        <p class="float-row" aria-hidden="true">🍓 💗 ⭐ 🐱 🍬 ✨ 🎀</p>
+      </article>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
